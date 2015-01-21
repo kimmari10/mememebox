@@ -8,7 +8,7 @@
 	margin-top : 110px;	
 }
 	
-#logo{
+.logo{
 	background: url("../headerImg.png") -780px -170px no-repeat;
 	width:243px;
 	height: 29px;

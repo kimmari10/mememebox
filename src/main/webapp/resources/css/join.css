@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+
+/* join */
+
+.joinWrap{
+	width: 700px;
+	margin: auto;
+	margin-top: 18px;
+	position: relative;
+	color: #000;
+}
+
+.wrapBox{
+	width: 578px;
+	padding:40px 60px;
+	border:1px solid #ebebeb;
+}
+
+.logo{
+	background: url("../headerImg.png") -780px -170px no-repeat;
+	width:243px;
+	height: 29px;
+	text-indent: -9999px;
+}
+
+.nav{
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.nav li{
+	float: left;	
+}

@@ -3,20 +3,106 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-    <link href="../../resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="../../resources/css/reset.css" rel="stylesheet" media="screen">
-    <link href="../../resources/css/common.css" rel="stylesheet" media="screen">
+    <link href="../../resources/css/join.css" rel="stylesheet" media="screen">
 </head>
 <body>
-
-<div id="logo">로고</div>
-
-<div>
-	<ul>
-		<li><a href="">로그인</a></li>
-		<li><span>|</span><a href="">고객센터</a></li>
+<div class="joinWrap">
+	<h1 class="logo">	<a href="index">MEMBERBOX</a></h1>
+	<ul class="nav">
+		<li><a href="login">로그인</a></li>
+		<li><span>|</span><a href="faq">고객센터</a></li>
 	</ul>
+	
+	<div class="wrapBox">
+		<form action="" method="post" id="joinForm">
+			<h2 class="subTitle">회원가입</h2>
+				<label for="emailId" class="title">아이디 (이메일)</label>
+				<input class="idForm" type="text" name="emailId" placeholder="이메일" value>
+				<span>@</span>
+				<input class="idForm" type="text" name="emailHost" id="emailHost" value>
+				<select title="이메일주소 선택" id="optEmail">
+					<option value selected>직접입력</option>
+					<option value="naver.com">naver.com</option>
+					<option value="hanmail.net">hanmail.net</option>
+					<option value="nate.com">nate.com</option>
+					<option value="gmail.com">gmail.com</option>
+					<option value="hotmail.com">hotmail.com</option>
+					<option value="lycos.co.kr">lycos.co.kr</option>
+					<option value="empal.com">empal.com</option>
+					<option value="dreamwiz.com">dreamwiz.com</option>
+					<option value="korea.com">korea.com</option>
+				</select>
+				<label for="u_pwd" class="title">비밀번호</label>
+				<input type="password" name="u_pwd" id="u_pwd2" value>
+				<label for="u_pwd2" class="title">비밀번호 재확인</label>
+				<input type="password" name="u_pwd2" id="u_pwd2" value>
+				
+				<label for="recommendUserId" class="title">추천인 이메일(추천 코드)</label>
+				<input type="text" name="recommendUserId" id="recommendUserId" class="referenceEmail" value>
+				<p text> *추천인 입력 후 가입만 해도 친구와 나 모두 2000P 적립!</p>
+			
+			<div class="joinBox">
+			<!-- joinBox -->
+				<h3>회원정보</h3>
+				<div class="userBox">
+					<span class="group">
+						<label for="name" class="title">이름</label>
+						<input type="text" name="u_name" id="u_name" class="nameBox" value>
+					</span>
+					<label for="u_tel_01">휴대폰번호</label>
+					<select title="휴대폰 앞자리" id="u_tel_01">
+						<option>010</option>
+						<option>011</option>
+						<option>016</option>
+						<option>017</option>
+						<option>018</option>
+						<option>019</option>
+					</select>
+					<span class="phoneBar"> - </span>
+					<label for="u_tel_01">휴대폰번호</label>
+					<input type="text" id="m_tel_02" class="phoneBox1" title="휴대폰번호 중간자리" maxlength="4" value>
+					<span class="phoneBar"> - </span>
+					<input type="text" id="m_tel_03" class="phoneBox2" title="휴대폰번호 끝자리" maxlength="4" value>
+					<p class="text">* 중복가입 방지를 위한 휴대폰번호 인증절차입니다. (1개의 전화번호당 1개의 이메일 주소로만 가능)</p>
+					<label for="birth" class="title">생년월일</label>
+					<select>
+					<!-- for문 -->
+						<option value disabled selected>년도</option>
+						<option value="2000">2000년</option>
+						<option value="1990" selected>1990년</option>
+						<option value="1950">1950년</option>
+					</select>
+					<select name="u_month" title="월 선택" id="u_month" class="select_month">
+						<option value disabled selected>월</option>
+						<option value="1">1월</option>
+						<option value="2">2월</option>
+						<option value="3">3월</option>
+						<option value="4">4월</option>
+						<option value="5">5월</option>
+						<option value="6">6월</option>
+						<option value="7">7월</option>
+						<option value="8">8월</option>
+						<option value="9">9월</option>
+						<option value="10">10월</option>
+						<option value="11">11월</option>
+						<option value="12">12월</option>
+					</select>
+					<select name="u_day" title="일 선택" id="u_day" class="select_day">
+						<option value disabled selected>일</option>
+						<option value="1">1일</option>
+						<!-- 월별 날짜 계산 및 for문 -->
+					</select>
+					<span class="title gender">성별</span>
+					<input name="u_gender" type="radio" id="genderF" value="여자" checked="checked">
+					<label for="genderF" >여자</label>
+					<input name="u_gender" type="radio" id="genderM" value="남자">
+					<label for="genderM" >남자</label>
+					<button type="submit" class="pinBtn" value="가입완료">가입완료</button>
+				</div>
+			</div>
+		</form>
+	</div>
 </div>
-
 </body>
 </html>
