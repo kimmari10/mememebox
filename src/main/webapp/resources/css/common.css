@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+/* --- login --- */
+.loginWrap{
+	width: 698px;
+	height:auto;
+	margin:0 auto;
+	margin-top : 110px;	
+}
+	
+#logo{
+	background: url("../headerImg.png") -780px -170px no-repeat;
+	width:243px;
+	height: 29px;
+	text-indent: -9999px;
+}
+
+.leftBox{
+	width: 227px;
+	float: left;
+	padding-right: 58px;
+}
+
+.rightBox{
+	width: 227px;
+	float: left;
+	padding-left: 58px;
+}
+
+.login{
+	background: url("../loginImg.png") -10px -80px no-repeat;
+	width:72px;
+	height: 26px;
+	margin-bottom:12px;
+	text-indent: -9999px;
+}
+
+.loginCaption{
+	margin-bottom: 55px;
+	
+}
+
+.textBox{
+	width: 227px;
+	height: 37px;
+	margin-bottom: 10px;
+}
+
+.loginBtn{
+	color: #fff;
+	width:227px;
+	height: 45px;
+	margin: 0 auto;
+	background-color: #fe49aa;
+	display: block;
+}
+
+.naver{
+	color: #fff;
+	width:227px;
+	height: 45px;
+	background-color: #1ec800;
+	display: block;
+	margin-bottom: 30px; 
+}
+
+.facebook{
+	color: #fff;
+	width:227px;
+	height: 45px;
+	background-color: #3f5aa7;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.joinBox{
+	color: #fa4aac;
+	width:227px;
+	height: 30px;
+	background-color: #ececec;
+	display: block;
+	text-align: center;	
+	padding-top: 14px;
+}
+
+.loginBox{
+	padding:50px 60px;
+	width: 600px;
+	height: 400px;
+	border: 1px solid #cfcfcf;
+}
+
+.find{
+	width: 550px;
+	text-align: center;
+}
+
+
+.wrapper{
+	width:1048px;	
+}
+
+.navi{
+	background-color: black
+}
